@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="springboot-archetype-quickstart">
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*.properties</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <requiredProperties>
+        <requiredProperty key="port">
+            <defaultValue>8888</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="springboot-starter-parent-version">
+            <defaultValue>2.5.6</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="groupId">
+            <defaultValue>com.coder.wang</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+</archetype-descriptor>
